@@ -6,6 +6,8 @@ data:
     -----END CERTIFICATE-----
 kind: ConfigMap
 metadata:
+  annotations:
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
   creationTimestamp: null
   name: custom-ca
   namespace: openshift-config
